@@ -1,1 +1,43 @@
-Since it is allowed I will put all elements directly in html. Will start with results page and questions page as hidden elements via css. Javacsipt will add functionality of hiding/showing the html elements as needed by user. Each block of elemnts can be in a div with a class or id. Will need a setTimeInterval stored to a variable and then convert that var in a conversion function to show the timer. Will also need radio element selectors to choose only one option at a time. To confirm each is right we can use an object with a and q keys with stored arrays.
+Since it is allowed I will put all elements directly in html. Will start with results page and questions page as hidden elements via css. Javacsipt will add functionality of hiding/showing the html elements as needed by user. Each block of elements can be in a div with a class or id so we can jQuery target them to be hidden by script. Will need a setTimeInterval stored to a variable and then convert that var in a conversion function to show the timer while on questions page. Will also need radio element selectors to choose only one option at a time on questions page. To confirm each is right we can use an object with a and q keys with stored arrays. Or since we are using static html we will only need a single array for answers, questions don't need to be stored as a variable... EZ mode. :)
+
+in html:
+<!-- -->
+<!-- div classed container for static elements that stay on page always with game title and themed background
+
+<!-- div with ID nested into main container with welcoming text and button to start gameplay which starts timer-->
+
+<!-- div with ID nested into main container with timer at top, then questions, radio inputs, and submit button.-->
+
+<!-- div with iD nested into main container with results -->
+
+
+in JS:
+//declared variables, need counters for right/wrong/unanswered and one to hold timer count
+
+//on page loadup condition for all script
+
+//possibly music? if I have time, but must include button for disabling audio
+
+//on click event for button on screen to run startGame function
+
+//startGame function will... hide welcome div
+
+//show questions div
+
+//start setTimeInterval
+
+//(user then inputs answers, no script active till->) if time runs out run function results
+
+//if user presses submit button run function results
+
+//write up function for results which will...
+
+//tally answers right wrong and untouched to corresponding variables
+
+//display those values into the elements in results div
+
+//hide questions div 
+
+//show results div
+
+//on play again button click startGame function runs
