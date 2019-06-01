@@ -1,10 +1,12 @@
+//index.html is linked to app.js, I just used this file as a rough draft to work out kinks and leaves notes and console logs to myself as I went along. :)
+
 //declared variables, need counters for right/wrong/unanswered and one to hold timer count
 var right = 0;
 var wrong = 0;
 var not = 0;
 var counter = 90;
 var timer;
-var answerKey = [2, 4, 1]
+var answerKey = ["2", "4", "1"]
 //on page loadup condition for all script to start running
 $(document).ready(function () {
 
@@ -41,17 +43,45 @@ $(document).ready(function () {
         clearInterval(timer);
 
         //tally answers right wrong and untouched to corresponding variables
-        // console.log($("input:radio[name=0]:checked").val());
+        // console.log($("input:radio[name=0]:checked").val());  --- was hard to get working, also despite seeming like it returns strings for 
         for (var i = 0; i < answerKey.length; i++) {
             var answer = $("input:radio[name=" + i + "]:checked").val();
-            console.log(answer);
-            console.log(answerKey[i]);
-            if (answer == answerKey[i]) {
-                console.log("correct")
+            // console.log(answer);
+            // console.log(answerKey[i]);
+            if (answer === answerKey[i]) {
+                // console.log("correct") 
+                right++;
+            } else if (answer === undefined) {
+                not++;
+            } else {
+                wrong++;
             }
         }
         //display those values into the elements in results div
-
+        // console.log(right);
+        // console.log(wrong);
+        // console.log(not);
+        if (right === 0) {
+            $("#correct").text("none");
+        } else {
+            $("#correct").text(right);
+        }
+        if (wrong === 0) {
+            $("#incorrect").text("none");
+        } else {
+            $("#incorrect").text(wrong);
+        }
+        if (not === 0) {
+            $("#not-put").text("You were able to answer all of the questions!");
+        } else if (not === 1) {
+            $("#not-put").text("You did not give an answer for one question.");
+        } else {
+            $("#not-put").text("You didn't give an answer for " + not + " questions.");
+        }
+        if (not === 0 && wrong === 0){
+            $("#results-page").append("<h2 class=text-center> Amazing job! You're a real fan. :) </h2><br><br>")
+        }
+        $("#results-page").append("<h2 class=text-center> Thanks for playing, come back soon. </h2><br><br>")
         //hide questions div 
         $("#questions-page").toggle();
         //show results div
