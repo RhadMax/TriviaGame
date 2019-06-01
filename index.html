@@ -9,25 +9,39 @@
     <link href="assets/css/reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <!-- div classed container for static elements that stay on page always with game title and themed background -->
-    <div class="container">
-        <!-- div with ID nested into main container with welcoming text and button to start gameplay which starts timer-->
-        <div id="welcome-page">
-
+    <div class="backdrop">
+        <!-- div classed container for static elements that stay on page always with game title and themed background -->
+        <div class="card mb-3">
+            <img style="margin-top: 15px; width: 45%;" src="assets/images/tmnt logo1.jpg" class="card-img-top"
+                alt="TMNT Trivia">
         </div>
-        <!-- div with ID nested into main container with timer at top, then questions, radio inputs, and submit button.-->
-        <div id="questions-page">
+        <div class="container container-main">
+            <br><br>
+            <!-- <img src="assets/images/tmnt logo1.jpg"> -->
+            <!-- div with ID nested into main container with welcoming text and button to start gameplay which starts timer-->
+            <div id="welcome-page">
 
-        </div>
-        <!-- div with iD nested into main container with results -->
-        <div id="results-page">
+                <h2 class="text-center">How well do you know your favorite ninja's on a halfshell?</h2>
+                <br><br>
+                <button id="starter">Start!</button>
+                <br><br>
+                <h2 class="text-center">Karate chop the start button to get going and find out!</h2>
+            </div>
+            <!-- div with ID nested into main container with timer at top, then questions, radio inputs, and submit button.-->
+            <div id="questions-page">
 
+            </div>
+            <!-- div with iD nested into main container with results -->
+            <div id="results-page">
+
+            </div>
         </div>
     </div>
     <script src="assets/javascript/game.js"></script>

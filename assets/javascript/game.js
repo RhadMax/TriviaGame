@@ -17,15 +17,15 @@ $(document).ready(function () {
         not = 0;
         counter = 150;
         //hide welcome div
-
+        $("#welcome-page").toggle();
         //show questions div
-
+        $("#questions-page").toggle();
         //start setTimeInterval
         timer = setInterval(countDown, 1000)
     }
     //on click event for button on screen to run startGame function
     $("#starter").on("click", startGame);
-    startGame();
+    
     //(user then inputs answers, no script active till->) if time runs out run function results
 
     //if user presses submit button run function results
