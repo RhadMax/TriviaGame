@@ -28,7 +28,7 @@
             <!-- div with ID nested into main container with welcoming text and button to start gameplay which starts timer-->
             <div id="welcome-page">
 
-                <h2 class="text-center">How well do you know your favorite ninja's on a halfshell?</h2>
+                <h2 class="text-center">How well do you know your favorite ninjas on a halfshell?</h2>
                 <br><br>
                 <button id="starter">Start!</button>
                 <br><br>
@@ -36,7 +36,35 @@
             </div>
             <!-- div with ID nested into main container with timer at top, then questions, radio inputs, and submit button.-->
             <div id="questions-page">
-
+                <h2 class="text-center">Time Left: <span id="time-display">01:30</span></h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            The sword-wielding leader of the group is:<br><br>
+                            <input type="radio" name="0" value="1"> Donatello<br>
+                            <input type="radio" name="0" value="2"> Leonardo<br>
+                            <input type="radio" name="0" value="3"> Raphael<br>
+                            <input type="radio" name="0" value="4"> Stalin
+                        </div>
+                        <div class="col-sm-4">
+                            The master who trained the turtles was:<br><br>
+                            <input type="radio" name="1" value="1"> Shredder<br>
+                            <input type="radio" name="1" value="2"> Mr. Miyagi<br>
+                            <input type="radio" name="1" value="3"> Michelangelo<br>
+                            <input type="radio" name="1" value="4"> Splinter
+                        </div>
+                        <div class="col-sm-4">
+                            The turtles' favorite food item is:<br><br><br>
+                            <input type="radio" name="2" value="1"> Pizza<br>
+                            <input type="radio" name="2" value="2"> Insects<br>
+                            <input type="radio" name="2" value="3"> Dried Shrimp<br>
+                            <input type="radio" name="2" value="4"> Cheeseburgers
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+                <button id="submit-answers">Start!</button>
+                <br><br>
             </div>
             <!-- div with iD nested into main container with results -->
             <div id="results-page">

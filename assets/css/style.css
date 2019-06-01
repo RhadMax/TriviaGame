@@ -16,7 +16,7 @@ img {
     margin: 0 auto;
 }
 
-#welcome-page {
+#welcome-page, #questions-page, #results-page {
     background-color: rgba(245, 245, 245, 0.623);
     font-family: 'Luckiest Guy', cursive;
     color:rgb(4, 63, 4);
@@ -25,6 +25,9 @@ img {
     1px -1px 0 whitesmoke,
     -1px 1px 0 whitesmoke,
     1px 1px 0 whitesmoke;
+}
+#questions-page, #results-page {
+    display:none;
 }
 
 button {
