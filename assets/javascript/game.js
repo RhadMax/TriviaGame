@@ -6,7 +6,7 @@ var wrong = 0;
 var not = 0;
 var counter = 90;
 var timer;
-var answerKey = ["2", "4", "1"]
+var answerKey = ["2", "4", "1", "3", "2", "3", "4", "4", "2"]
 //on page loadup condition for all script to start running
 $(document).ready(function () {
 
