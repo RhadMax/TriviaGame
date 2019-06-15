@@ -2,4 +2,4 @@ This is an assignment from the UCSD Extension Coding Bootcamp. In this assignmen
 
 This assignment further compounded our ability to create a page using html and css from scratch, as well as provided more practice in both creating and targeting elements dynamically through the use of javascript and jQuery. New html elements such as radio buttons were critical in reaching the requirements of this task.
 
-To view the app live on github pages please use this link: RhadMax.github.io/TriviaGame
+To view the app live on github pages please use this link: https://rhadmax.github.io/TriviaGame/
